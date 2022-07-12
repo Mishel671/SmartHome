@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">SmartHome</string>
+    <string name="your_home_title">Your Home</string>
+    <string name="add_room_title">Add Room</string>
+    <string name="kitchen_item_title">Kitchen</string>
+    <string name="bedroom_item_title">Bedroom</string>
+    <string name="bathroom_item_title">Bathroom</string>
+    <string name="office_item_title">Office</string>
+    <string name="tv_room_item_title">TV Room</string>
+    <string name="living_room_item_title">Living Room</string>
+    <string name="garage_item_title">Garage</string>
+    <string name="toilet_item_title">Toilet</string>
+    <string name="kid_room_item_title">Kid Room</string>
 </resources>

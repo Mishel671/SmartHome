@@ -1,9 +1,20 @@
 package com.example.smarthome.data
 
-import com.example.smarthome.domain.KeyDevice
+import com.example.smarthome.data.database.RoomItemDb
+import com.example.smarthome.domain.RoomItem
 
-fun KeyDeviceDto.mapToEntity(): KeyDevice {
-    return KeyDevice(
-        keyDevice = this.keyDevice ?: ""
-    )
+fun RoomItem.mapToRoomItemDb(): RoomItemDb {
+    val item = this
+    return RoomItemDb().apply {
+        id = 0
+        name = item.name
+        image = item.image
+        countOfDevices = item.countOfDevices
+    }
 }
+
+fun RoomItemDb.mapToRoomItem() = RoomItem(
+    name = this.name,
+    image = this.image,
+    countOfDevices = this.countOfDevices
+)

@@ -1,9 +1,11 @@
 package com.example.smarthome.domain
 
-import io.reactivex.rxjava3.core.Single
 
 interface SmartHomeRepository {
 
-    fun getKeyDevice(uuid: String): Single<KeyDevice>
+    fun getRoomTypeList(): List<RoomType>
 
+    fun insertRoom(roomItem: RoomItem)
+
+    fun getRoomList()
 }
